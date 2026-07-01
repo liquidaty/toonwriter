@@ -35,7 +35,7 @@ ifeq ($(VERBOSE),1)
   CFLAGS+= ${CFLAGS_VECTORIZE_OPTIMIZED} ${CFLAGS_VECTORIZE_MISSED} ${CFLAGS_VECTORIZE_ALL}
 endif
 
-VERSION= $(shell (git describe --always --dirty --tags 2>/dev/null || echo "v0.0.0-toonwriter") | sed 's/^v//')
+VERSION= $(shell (git describe --always --dirty --tags 2>/dev/null || echo "v1.0.0-toonwriter") | sed 's/^v//')
 
 ifneq ($(findstring emcc,$(CC)),) # emcc
   NO_THREADING=1
