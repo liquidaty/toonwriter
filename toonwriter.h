@@ -6,8 +6,6 @@
 #include <stdio.h>
 #include <inttypes.h>
 
-#define TOONWRITER_VERSION "1.0.0"
-
 #define TOONW_STRLEN(x) strlen((const char *)x)
 
 #ifdef __cplusplus
