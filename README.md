@@ -2,6 +2,7 @@
 
 [![ci](https://github.com/liquidaty/toonwriter/actions/workflows/ci.yml/badge.svg)](https://github.com/liquidaty/toonwriter/actions/workflows/ci.yml)
 
+This library was modeled after https://github.com/liquidaty/jsonwriter
 
 #### Why do we need this?
 
@@ -13,13 +14,9 @@ This library was designed to meet the following requirements:
 * supports full range of UTF8
 * written in C, portable, and permissively licensed
 * thread safe
-* supports custom write functions and write targets (e.g. write to network or pipe
-or to custom buffer using some custom write function)
-
-The last item was the most difficult to find, but was indispensible for versatile
-reusability (for example, maybe we will not know, until dynamically at runtime, whether
-we want to write our TOON to stdout, stderr, another file, a network pipe, or just
-feed that back into some other process in a chain of data processing.
+* supports custom write functions and write targets, allowing the caller to write TOON to e.g. stdout,
+stderr, FILE *, network pipe, and/or back into some other process in a chain of
+data processing.
 
 #### How to use
 
